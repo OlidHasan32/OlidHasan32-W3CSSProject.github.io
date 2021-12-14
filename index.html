@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1,a {font-family: "Raleway", sans-serif;  text-decoration: none;}
+body, html {height: 100%}
+.bgimg {
+  background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.9)), url('https://olidhasan32.github.io/OlidHasan32-Database.github.io/images/iphone-notebook-pen-working-34580.jpg');
+  min-height: 100%;
+  background-repeat: no-repeat;
+    	background-position: center  center fixed;
+    	/*background-attachment: fixed; */
+		-webkit-background-size: cover;
+		-moz-background-size:cover;
+		-o-background-size:cover;
+    	background-size: cover;
+	border-bottom: 2px solid #28A745;
+}
+#coursework{
+  background-color: black;
+}
+#food{
+  margin-top:20px;
+}
+.mySlides {display:none;}
+.border-1{
+  border:1px solid white;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+#topics{
+  padding-bottom: 20px;
+}
+.divider hr{
+	width: 90%;
+  margin-left: 5%;
+	height: 1px;
+	background-color: #28A745;
+}
+
+/* Style all font awesome icons */
+.fa-facebook, .fa-twitter, .fa-linkedin, .fa-instagram, .fa-youtube  {
+ padding: 10px;
+ font-size: 30px;
+ width: 65px;
+ border-radius: 5px;
+ text-align: center;
+ text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+ opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+ background: #3B5998;
+ color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+ background: #55ACEE;
+ color: white;
+}
+
+.fa-linkedin {
+ background: #0e76a8;
+ color: white;
+}
+.fa-youtube {
+ background: red;
+ color: white;
+}
+.fa-instagram {
+ background: blue;
+ color: white;
+}
+.icons{
+  float:right;
+}
+</style>
+<body >
+
+
+
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-sm w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+    <a href="#coursework" class="w3-bar-item w3-button w3-padding-large w3-hide-small">COURSEWORK</a>
+    <a href="#PROJECTS" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECTS</a>
+    <a href="#topics" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOPICS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><span style="padding-right:10px;"> SEARCH </span><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+  <a href="#coursework" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">COURSEWORK</a>
+  <a href="#PROJECTS" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECTS</a>
+  <a href="#topics" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOPICS</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    Logo
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">Database<span class="w3-animate-fading">_</span>Technology</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">Project by Olid Hasan</p>
+  </div>
+</div>
+
+<!--------------------------------------------------------------------------------------------------- Slider ----------------------------------------------------------------------------------------------------->
+<hr>
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-sm w3-hide-small">
+     <img src="https://olidhasan32.github.io/OlidHasan32-Collegeproject3.github.io/images/gray-laptop-computer-showing-html-codes-in-shallow-.jpg"
+      class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750" style="margin-top:20px;">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h4 class="w3-center p-2">About Myself</h4><br>
+      <p class="w3-large">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use
+        <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+        <div class="w3-center">
+          <button class="w3-btn w3-round w3-green">More About Me</button>
+        </div>
+    </div>
+  </div>
+<!-- End page content -->
+</div>
+
+  <hr>
+
+<div  id="coursework" class="w3-display-container">
+  <h2 class="w3-center" style="color:white">ET-710 Projects</h2>
+
+  <div class="w3-content w3-display-container">
+    <div  class="mySlides" >
+    <img src="https://olidhasan32.github.io/OlidHasan32-Database.github.io/images/iceland3.jpg" style="width:100%; height:500px;">
+    <div class="w3-display-middle w3-container w3-padding-16 w3-black w3-button w3-round" style="width:200px;  text-decoration: none;" >
+      <a href="#">The Iceland Review</a>
+    </div>
+  </div>
+  <div  class="mySlides" >
+  <img src="https://olidhasan32.github.io/OlidHasan32-Database.github.io/images/intro_img2.jpg" style="width:100%; height:500px;">
+  <div class="w3-display-middle w3-container w3-padding-16 w3-black w3-round w3-button" style="width:200px; text-decoration:none;" >
+    <a href="#" >A shopping Website</a>
+  </div>
+  </div>
+
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+</div>
+<hr>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:auto;margin-top:20px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-1 w3-center" id="PROJECTS">
+    <div class="w3-quarter">
+      <img src="https://olidhasan32.github.io/OlidHasan32-Database.github.io/images/psdToHtml/psdToHtml1.png" alt="Sandwich" style="width:100%; height:250px;">
+
+    </div>
+    <div class="w3-quarter">
+      <img src="https://olidhasan32.github.io/OlidHasan32-Database.github.io/images/psdToHtml/psdToHtml4.png" alt="Steak" style="width:100%; height:250px;">
+
+    </div>
+    <div>
+      <h4 class="w3-center p-2">About These Projects</h4>
+      <p class="w3-large">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+        <div class="w3-center">
+          <button class="w3-btn w3-round w3-black">Learn More</button>
+        </div>
+    </div>
+  </div>
+
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food" >
+
+
+    <div class="w3-half">
+      <h4 class="w3-center">About These Projects</h4>
+      <p class="w3-large">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+        <div class="w3-center">
+          <button class="w3-btn w3-round w3-black">Learn More</button>
+        </div>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://olidhasan32.github.io/OlidHasan32-Database.github.io/images/psdToHtml/psdToHtml3.png" alt="Popsicle" style="width:100%; height:250px;">
+    </div>
+    <div class="w3-quarter">
+      <img src="https://olidhasan32.github.io/OlidHasan32-Database.github.io/images/psdToHtml/psdToHtml5.png" alt="Salmon" style="width:100%; height:250px;">
+    </div>
+  </div>
+</div>
+
+<hr>
+<div id="topics">
+  <div class="w3-container" style="background-color:#444444; color:white;">
+    <h3 class="w3-center ">We Learned In This Semester So Far</h3>
+    <p class="w3-center "> HTML5, CSS3, Animation</p>
+    <div class="w3-row" style="padding-bottom:20px;">
+       <div class="w3-col m4 w3-center">
+         <div class="w3-container w3-center">
+           <div class="w3-card-4 border-1" style="width:95%">
+             <img src="https://olidhasan32.github.io/OlidHasan32-Database.github.io/images/learned/pexels-photo-1591061.jpeg" alt="Alps" style="width:100%">
+             <div class="w3-container w3-center">
+               <h4>
+                    HTML 5
+               </h4>
+               <p>HTML stands for Hypertext Markup Language It is the standard markup language for Web pages</p>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="w3-col m4 w3-center">
+         <div class="w3-container w3-center">
+           <div class="w3-card-4 border-1" style="width:95%">
+             <img src="https://olidhasan32.github.io/OlidHasan32-Database.github.io/images/learned/pexels-photo-160107.jpeg" alt="Alps" style="width:100%">
+             <div class="w3-container w3-center">
+               <h4>
+                 CSS3
+               </h4>
+               <p>CSS stands for Cascading Style Sheets It describes how HTML elements are to be displayed</p>
+             </div>
+           </div>
+         </div>
+       </div>
+
+       <div class="w3-col m4 w3-center">
+         <div class="w3-container w3-center">
+           <div class="w3-card-4 border-1" style="width:95%">
+             <img src="https://olidhasan32.github.io/OlidHasan32-Database.github.io/images/learned/pexels-photo.jpg" alt="Alps" style="width:100%">
+             <div class="w3-container w3-center">
+               <h4>
+                  Boostrap
+               </h4>
+               <p>Bootstrap is a Cascading Style Sheets framework. It allow us to create Responsive Webpage.</p>
+             </div>
+           </div>
+         </div>
+       </div>
+    </div>
+  </div>
+</div>
+<hr/>
+
+
+<div id="contact">
+  <div>
+    <div class="w3-row">
+       <div class="w3-col m3 w3-center">
+         <h6> PHONE NUMBER </h6>
+         <p> (716)-888-8888 </p>
+       </div>
+       <div class="w3-col m3 w3-center">
+         <h6> EMAIL </h6>
+         <p> <a href="#">Send email</a> </p>
+       </div>
+
+       <div class="w3-col m3 w3-center">
+         <h6> ADDRESS </h6>
+         <p> 222-05, 56 Avenue, Bayside, NY,11364 </p>
+       </div>
+       <div class="w3-col m3 w3-center">
+         <h6> OFFICE </h6>
+         <p> Technology Building </p>
+       </div>
+    </div>
+    <div class="divider w3-center">
+       <hr>
+    </div>
+  </div>
+
+
+
+</div>
+<div class="w3-row">
+  <div class="w3-col m8">
+
+  </div>
+  <div class="w3-col m4 icons">
+    <!-- Add font awesome icons -->
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-youtube"></a>
+  </div>
+
+</div>
+
+
+
+
+<div class="w3-center">
+  <p>2020S ET710 Project Three By Olid Hasan</p>
+  <p>NOTE: This webpage is created for college project. All informations and materials used are for ONLY educational purposees.</p>
+</div>
+
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 2000);
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
